@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="" method="post">
+        <label>Username: </label>
+        <input name="username">
+        <label>Password: </label>
+        <input name="password" type="password">
+        <button>Submit</button>
+    </form>
+    {% if username %}
+    <h1>Welcome {{username}}</h1>
+    {% endif %}
+</body>
+</html>
